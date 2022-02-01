@@ -1,0 +1,79 @@
+
+html { 
+  width: 1920px;
+  height: 1080px;
+}
+
+body {
+  background: rgb(14,29,71);
+  background: linear-gradient(180deg, #0a0e19 0%, #000000 100%) no-repeat;
+  /*background: linear-gradient(to bottom, #000000, #FFFFFF); --#0a0e19 #e10000  height: 100%;   font-family: "Open Sans";*/ 
+}
+
+.all{
+  width: 1920px; /* Ширина блока */
+  height: 1080px;
+  margin-left: -960px; /* Отрицательный отступ от левого края страницы, должен равняться половине высоты блока со знаком минус */
+  margin-top: -540px; /* Отрицательный отступ от верхнего края страницы, должен равняться половине высоты блока со знаком минус */
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+}
+
+.backclock{
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.clock{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font: 400 16px/1.5 Lato, sans-serif;
+  font-size: 100pt;
+  color: #FFFFFF;
+  text-shadow: 0 0 2px #FFF;
+}
+
+.inclock{
+  display: inline;
+}
+
+.clock #separator {
+  -moz-animation: myfade 1s ease infinite;
+  -webkit-animation: myfade 1s ease infinite;
+}
+
+.round{
+  border-radius: 100px; /* Радиус скругления */
+  border: 3px solid #a10000; /* Параметры рамки */
+  box-shadow: 0 0 7px #910000; /* Параметры тени */
+}
+
+@-webkit-keyframes myfade {
+  0% {
+    opacity: 1.0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1.0;
+  }   
+}
+
+@-moz-keyframes myfade {
+  0% {
+    opacity: 1.0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1.0;
+  };
+}
